@@ -138,7 +138,7 @@ function setup2() {
         data.forEach(function(d) {
             d.EPS = +d.EPS;
             d.ForestArea= +d.ForestArea;
-            d.Year = parseTime(new Date(d.Year));//+d.Year;
+            d.Year = d.Year;//parseTime(new Date(d.Year));//+d.Year;
             d.Country = d["Country"];
         });
 
@@ -323,7 +323,7 @@ function setup() {
         data.forEach(function(d) {
            d.EPS = +d.EPS;
            d.ForestArea= +d.ForestArea;
-           d.Year = parseTime(new Date(d.Year));
+           d.Year = d.Year;//parseTime(new Date(d.Year));
            d.Country = d["Country"];
         });
 
